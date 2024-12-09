@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le CSS externe -->
+</head>
+<body>
+
+    <!-- Section Hero : une zone d'introduction avec un appel à l'action -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Postulez dès maintenant</h1>
+            <p>Complétez votre candidature pour rejoindre notre équipe</p>
+        </div>
+    </section>
+
+    <!-- Section Formulaire -->
+    <section class="apply-form">
+        <h2>Formulaire de Candidature</h2>
+
+        <!-- Formulaire -->
+        <form action="submit_form.php" method="POST">
+
+            <!-- Nom complet -->
+            <div class="form-group">
+                <label for="full-name">Nom complet</label>
+                <input type="text" id="full-name" name="full_name" required placeholder="Entrez votre nom complet">
+            </div>
+
+            <!-- Adresse email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Décrivez votre motivation"></textarea>
+            </div>
+
+            <!-- Bouton soumettre -->
+            <div class="form-group">
+                <button type="submit" class="submit-button">Soumettre ma candidature</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
